@@ -1,4 +1,10 @@
 body {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    color: #000;
+    background: #FAFAFA;
+    line-height: 1.33;
+    letter-spacing: -0.02em;
 }
 
 h1,
@@ -10,6 +16,7 @@ p {
 
 a {
     text-decoration: none;
+    color: #111;
 }
 
 ul {
@@ -30,10 +37,22 @@ button {
     font-family: inherit;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+}
+
 .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0%;
 }
 
 .container {
+    max-width: 1166px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .visually-hidden {
@@ -48,3 +67,410 @@ button {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
+
+/* Header */
+
+.header {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-right: 365px;
+}
+
+.logo-name {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
+
+.logo-chocolate {
+    font-style: normal;
+}
+
+.nav {
+    display: flex;
+    align-self: center;
+}
+
+.nav-list {
+    display: flex;
+    align-content: center;
+    gap: 24px;
+    margin-right: 90px;
+}
+
+.nav-link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.soc-icon-list {
+    display: flex;
+    gap: 14px;
+    align-self: center;
+}
+
+.soc-icon-link {
+    padding: 7px;
+    border-radius: 10px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+
+/* Section 1. Hero */
+
+.hero {
+    max-width: 1136px;
+    display: flex;
+    flex-direction: column;
+    padding: 381px 40px 40px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(17, 17, 17, 0.70);
+    margin-bottom: 80px;
+}
+
+.hero-title {
+    width: 484px;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    margin-bottom: 32px;
+}
+
+.hero-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-btns-main {
+    display: flex;
+    gap: 14px;
+}
+
+.hero-btn-buy {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    padding: 14px 40px;
+    align-items: flex-start;
+    border-radius: 100px;
+    background: #FD9222;
+}
+
+.hero-btn-how {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    padding: 14px 40px;
+    align-items: flex-start;
+    border-radius: 100px;
+    border: 1px solid #FFF;
+    background: transparent;
+}
+
+.hero-scroll {
+    gap: 14px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+}
+
+.hero-scroll-btn {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    fill: #FFF;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    padding: 8px;
+}
+
+
+/* Section 2. Our benefits */
+
+.benefits {
+    background: #1E1823;
+    margin-bottom: 60px;
+}
+
+.benefits-container {
+    max-width: 1166px;
+    margin: 0 auto;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 88px;
+    padding: 50px 0px;
+}
+
+.benefits-item {
+    width: calc((100% - 88px*2) / 2);
+}
+
+.benefits-title {
+    margin-bottom: 18px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.22;
+}
+
+.benefits-text {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Section 3. Tastes */
+
+.tastes-title {
+    width: 412px;
+}
+
+.tastes-title-taste {
+    color: #FD9222;
+}
+
+.tastes-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.tastes-item {
+    width: calc((100% - 32px*3) / 4);
+    padding: 28px 23px;
+}
+
+.orange {
+    border-radius: 15px;
+    background: #FD9222;
+}
+
+.white {
+    border-radius: 15px;
+    border: 1px solid #FD9222;
+    background: #FFF;
+}
+
+.dark {
+    border-radius: 15px;
+    background: #1E1823;
+}
+
+.tastes-text {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 36px;
+    margin-left: 5px;
+}
+
+.black {
+    color: #111;
+}
+
+
+/* Section 4. How it's made? */
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.16;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin: 0 auto 50px;
+}
+
+.how-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.how-image {
+    border-radius: 15px;
+}
+
+.how-card {
+    width: 516px;
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #FFF;
+}
+
+.how-card-title {
+    font-size: 18px;
+    font-weight: 600;
+    width: 360px;
+    margin-bottom: 28px;
+}
+
+.how-card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.how-card-item {
+    display: flex;
+    align-content: flex-start;
+}
+
+.how-card-marker {
+    width: 8px;
+    height: 8px;
+    flex-shrink: 0;
+    margin-top: 5px;
+    margin-right: 8px;
+    background-color: #4C4C4C;
+    border: 1px solid #ECEDED;
+    border-radius: 50%;
+}
+
+.how-card-text {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+/* Section 5. Our products */
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 18px;
+}
+
+.products-item {
+    width: calc((100% - 18px*3) / 4);
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: #FFF;
+    padding: 32px 20px;
+}
+
+.products-item-title {
+    margin: 8px auto 2px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.products-item-text {
+    color: rgba(17, 17, 17, 0.70);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.products-item-btn {
+    display: flex;
+    padding: 8px 20px;
+    align-items: flex-start;
+    border-radius: 100px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: #FAFAFA;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0 auto;
+}
+
+
+/* Section 6. Top sellers */
+
+
+.top-list {
+    display: flex;
+    gap: 16px;
+}
+
+.top-item {
+    width: calc((100% - 16px*2) / 3);
+}
+
+.top-image {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.top-item-title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border-radius: 0px 0px 15px 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    border-top: none;
+    background: #FFF;
+}
+
+
+/* Section 7. Reviews */
+
+.reviews-list {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 50px;
+}
+
+.reviews-item {
+    width: calc((100% - 28px*2) / 3);
+}
+
+.reviews-client {}
+
+.reviews-client-photo {}
+
+.reviews-client-name {}
+
+.review-text {}
+
+.reviews-btn {}
