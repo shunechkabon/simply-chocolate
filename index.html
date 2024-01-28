@@ -398,16 +398,14 @@
 
           <ul class="reviews-list">
             <li class="reviews-item">
-              <div class="reviews-client">
-                <img
-                  class="reviews-client-photo"
-                  src="./images/client-1.png"
-                  alt="Red-haired girl"
-                  width="80"
-                  height="80"
-                />
-                <h3 class="reviews-client-name">Victoria Dobrzhanska</h3>
-              </div>
+              <img
+                class="reviews-client-photo"
+                src="./images/client-1.png"
+                alt="Red-haired girl"
+                width="80"
+                height="80"
+              />
+              <h3 class="reviews-client-name">Victoria Dobrzhanska</h3>
 
               <p class="review-text">
                 I love this chocolate bar. Perfect combination of light crispy
@@ -460,33 +458,48 @@
 
     <!-- Footer -->
 
-    <footer>
-      <div class="container">
-        <div>
-          <p><span>Chocolate</span> a delicious cure for a bad day</p>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-first-row">
+          <p class="footer-text">
+            <span class="footer-text-span">Chocolate</span> a delicious cure for
+            a bad day
+          </p>
 
-          <div>
-            <p>Social networks</p>
-            <ul>
+          <div class="footer-soc">
+            <p class="footer-subtitle">Social networks</p>
+            <ul class="soc-icon-list">
               <li>
-                <a>
-                  <svg width="24" height="24">
+                <a class="soc-icon-link footer-icon-link" href="">
+                  <svg
+                    class="soc-icon-item footer-icon-item"
+                    width="24"
+                    height="24"
+                  >
                     <use href="./images/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
 
               <li>
-                <a>
-                  <svg width="24" height="24">
+                <a class="soc-icon-link footer-icon-link" href="">
+                  <svg
+                    class="soc-icon-item footer-icon-item"
+                    width="24"
+                    height="24"
+                  >
                     <use href="./images/symbol-defs.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
 
               <li>
-                <a>
-                  <svg width="24" height="24">
+                <a class="soc-icon-link footer-icon-link" href="">
+                  <svg
+                    class="soc-icon-item footer-icon-item"
+                    width="24"
+                    height="24"
+                  >
                     <use href="./images/symbol-defs.svg#icon-twitter"></use>
                   </svg>
                 </a>
@@ -494,31 +507,37 @@
             </ul>
           </div>
 
-          <div>
-            <p>Contact us</p>
+          <div class="footer-contact">
+            <p class="footer-subtitle">Contact us</p>
             <address>
-              <ul>
+              <ul class="footer-address">
                 <li>
-                  <a href="tel:+380684439426">+380 (68) 443-94-26</a>
+                  <a class="footer-address-item" href="tel:+380684439426"
+                    >+380 (68) 443-94-26</a
+                  >
                 </li>
                 <li>
-                  <a href="mailto:simplychoc@gmail.com">simplychoc@gmail.com</a>
+                  <a
+                    class="footer-address-item"
+                    href="mailto:simplychoc@gmail.com"
+                    >simplychoc@gmail.com</a
+                  >
                 </li>
               </ul>
             </address>
           </div>
         </div>
 
-        <nav>
-          <ul>
+        <nav class="nav footer-nav">
+          <ul class="nav-list footer-nav-list">
             <li>
-              <a>Home</a>
+              <a class="nav-link footer-nav-link" href="./index.html">Home</a>
             </li>
             <li>
-              <a>How it's made?</a>
+              <a class="nav-link footer-nav-link" href="">How it's made?</a>
             </li>
             <li>
-              <a>Chocolate is loved</a>
+              <a class="nav-link footer-nav-link" href="">Chocolate is loved</a>
             </li>
           </ul>
         </nav>

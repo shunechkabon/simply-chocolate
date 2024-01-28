@@ -463,14 +463,129 @@ button {
 
 .reviews-item {
     width: calc((100% - 28px*2) / 3);
+    border-radius: 15px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: #FFF;
+    box-shadow: 0px 10px 100px 0px rgba(17, 17, 17, 0.03);
+    position: relative;
+    margin-top: 42px;
 }
 
-.reviews-client {}
+.reviews-client-photo {
+    position: absolute;
+    bottom: 162px;
+    left: 140px;
+}
 
-.reviews-client-photo {}
+.reviews-client-name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 56px;
+}
 
-.reviews-client-name {}
+.review-text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+    width: 312px;
+    margin: 24px;
+}
 
-.review-text {}
+.reviews-btn {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    padding: 14px 40px;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 100px;
+    border: 1px solid #FD9222;
+    background-color: transparent;
+    margin: 0 auto;
+}
 
-.reviews-btn {}
+
+/* Footer */
+
+.footer {
+    margin-top: 60px;
+    background: #1E1823;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 74px;
+    align-content: flex-start;
+}
+
+.footer-first-row {
+    display: flex;
+}
+
+.footer-text {
+    width: 300px;
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    margin-right: 474px;
+}
+
+.footer-text-span {
+    color: #FD9222;
+}
+
+.footer-subtitle {
+    margin-bottom: 14px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28;
+}
+
+.footer-icon-link {
+    border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.footer-icon-item {
+    fill: #fff;
+}
+
+.footer-contact {
+    margin-left: 50px;
+}
+
+.footer-address {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.footer-address-item {
+    color: #FFF;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.28;
+}
+
+.footer-nav {
+    align-self: start;
+}
+
+.footer-nav-list {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.footer-nav-link {
+    color: #FFF;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
