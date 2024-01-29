@@ -82,9 +82,6 @@ button {
     padding-top: 30px;
     padding-bottom: 30px;
     margin-right: 365px;
-}
-
-.logo-name {
     font-size: 18px;
     font-style: italic;
     font-weight: 700;
@@ -134,6 +131,16 @@ button {
     flex-shrink: 0;
 }
 
+.soc-icon-link:hover,
+.soc-icon-link:focus {
+    border: 1px solid rgba(253, 146, 34, 0.10);
+}
+
+.soc-icon-link:hover .soc-icon-item,
+.soc-icon-link:focus .soc-icon-item {
+    fill: #FD9222;
+}
+
 
 /* Section 1. Hero */
 
@@ -145,7 +152,13 @@ button {
     flex-shrink: 0;
     border-radius: 30px;
     background: rgba(17, 17, 17, 0.70);
+    background-image: linear-gradient(to bottom, 
+    rgba(17, 17, 17, 0.40), 
+    rgba(17, 17, 17, 0.40)), url('../images/hero-bg.jpg');
     margin-bottom: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -179,6 +192,12 @@ button {
     background: #FD9222;
 }
 
+.hero-btn-buy:hover,
+.hero-btn-buy:focus {
+    color: #FD9222;
+    background: #FCF1E0;
+}
+
 .hero-btn-how {
     color: #FFF;
     font-size: 14px;
@@ -189,6 +208,12 @@ button {
     border-radius: 100px;
     border: 1px solid #FFF;
     background: transparent;
+}
+
+.hero-btn-how:hover,
+.hero-btn-how:focus {
+    border: 1px solid #FD9222;
+    color: #FD9222;
 }
 
 .hero-scroll {
@@ -203,16 +228,34 @@ button {
     letter-spacing: -0.03em;
 }
 
-.hero-scroll-btn {
+.hero-scroll-link {
     width: 38px;
     height: 38px;
     flex-shrink: 0;
-    fill: #FFF;
+    background-color: #FFF;
     border-radius: 50%;
-
     display: flex;
     align-items: center;
     padding: 8px;
+}
+
+.hero-scroll-icon {
+    fill: #FD9222;
+}
+
+.hero-scroll:hover,
+.hero-scroll:focus {
+    color: #FD9222;
+}
+
+.hero-scroll:hover .hero-scroll-link,
+.hero-scroll:focus .hero-scroll-link {
+    background-color: #FD9222;
+}
+
+.hero-scroll:hover .hero-scroll-icon,
+.hero-scroll:focus .hero-scroll-icon {
+    fill: #ffffff;
 }
 
 
@@ -239,7 +282,30 @@ button {
 }
 
 .benefits-item {
-    width: calc((100% - 88px*2) / 2);
+    width: calc((100% - 88px*2) / 3);
+    position: relative;
+}
+
+.benefits-line::after {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 124px;
+    background: rgba(255, 255, 255, 0.50);
+    right: -44px;
+    top: 63px;
+}
+
+.benefits-icon-container {
+    display: flex;
+    padding: 15px;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    margin-bottom: 22px;
+    width: 62px;
+    height: 62px;
 }
 
 .benefits-title {
@@ -275,6 +341,18 @@ button {
 .tastes-item {
     width: calc((100% - 32px*3) / 4);
     padding: 28px 23px;
+    position: relative;
+}
+
+.tastes-icon {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    color: #fff;
+}
+
+.tastes-item:nth-child(2n) .tastes-icon {
+    color: #FD9222;
 }
 
 .orange {
@@ -588,4 +666,17 @@ button {
     color: #FFF;
     padding-top: 18px;
     padding-bottom: 18px;
+}
+
+
+
+
+/* Media. Resolution */
+
+@media screen and (min-resolution: 192dpi) {
+    .hero {
+        background-image: linear-gradient(to bottom,
+                    rgba(17, 17, 17, 0.40),
+                    rgba(17, 17, 17, 0.40)), url('../images/hero-bg@2x.jpg');
+    }
 }

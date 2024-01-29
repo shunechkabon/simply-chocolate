@@ -24,14 +24,12 @@
     <!-- Header -->
     <header>
       <div class="container header">
-        <div class="logo">
-          <a class="logo-name" href="./index.html"
-            >SIMPLY <span class="logo-chocolate">CHOCOLATE</span></a
-          >
+        <a class="logo" href="./index.html"
+          >SIMPLY <span class="logo-chocolate">CHOCOLATE</span>
           <svg width="24" height="24">
             <use href="./images/symbol-defs.svg#icon-logo"></use>
           </svg>
-        </div>
+        </a>
 
         <nav class="nav">
           <ul class="nav-list">
@@ -51,7 +49,7 @@
           <li>
             <a class="soc-icon-link" href="">
               <svg class="soc-icon-item" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                <use href="./images/icons.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -59,7 +57,7 @@
           <li>
             <a class="soc-icon-link" href="">
               <svg class="soc-icon-item" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                <use href="./images/icons.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
@@ -67,7 +65,7 @@
           <li>
             <a class="soc-icon-link" href="">
               <svg class="soc-icon-item" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
           </li>
@@ -90,14 +88,14 @@
               <button class="hero-btn-how" type="button">How it's made</button>
             </div>
 
-            <div class="hero-scroll">
+            <a class="hero-scroll" href="">
               scroll down
-              <button class="hero-scroll-btn" type="button">
+              <div class="hero-scroll-link">
                 <svg class="hero-scroll-icon" width="22" height="22">
-                  <use href="./images/symbol-defs.svg#icon-scroll"></use>
+                  <use href="./images/icons.svg#icon-scroll"></use>
                 </svg>
-              </button>
-            </div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
@@ -109,7 +107,12 @@
           <h2 class="visually-hidden"></h2>
 
           <ul class="benefits-list">
-            <li class="benefits-item">
+            <li class="benefits-item benefits-line">
+              <div class="benefits-icon-container">
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#icon-chocolate"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">Unsurpassed taste</h3>
               <p class="benefits-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -119,7 +122,12 @@
               </p>
             </li>
 
-            <li class="benefits-item">
+            <li class="benefits-item benefits-line">
+              <div class="benefits-icon-container">
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#icon-coin"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">Affordable price</h3>
               <p class="benefits-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -131,6 +139,11 @@
             </li>
 
             <li class="benefits-item">
+              <div class="benefits-icon-container">
+                <svg width="32" height="32">
+                  <use href="./images/icons.svg#icon-spoon"></use>
+                </svg>
+              </div>
               <h3 class="benefits-title">Own production</h3>
               <p class="benefits-text">
                 We take pride in our own production process, ensuring that every
@@ -154,38 +167,99 @@
 
           <ul class="tastes-list">
             <li class="tastes-item orange">
-              <img src="./images/taste-1.png" alt="Pieces of Milk Chocolate" />
+              <svg class="tastes-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+              <img
+                srcset="./images/taste-1.png 1x, ./images/taste-1@2x.png 2x"
+                src="./images/taste-1.png"
+                alt="Pieces of Milk Chocolate"
+              />
               <p class="tastes-text">MILK CHOCOLATE</p>
             </li>
 
             <li class="tastes-item white">
-              <img src="./images/taste-2.png" alt="A bottle of milk" />
+              <svg class="tastes-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+              <img
+                srcset="./images/taste-2.png 1x, ./images/taste-2@2x.png 2x"
+                src="./images/taste-2.png"
+                alt="A bottle of milk"
+              />
               <p class="tastes-text black">MILK</p>
             </li>
 
             <li class="tastes-item dark">
-              <img src="./images/taste-3.png" alt="Hazelnuts" />
+              <svg class="tastes-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+              <img
+                srcset="./images/taste-3.png 1x, ./images/taste-3@2x.png 2x"
+                src="./images/taste-3.png"
+                alt="Hazelnuts"
+              />
               <p class="tastes-text">NUTS</p>
             </li>
 
             <li class="tastes-item white">
-              <img src="./images/taste-4.png" alt="Chocolate drops" />
+              <svg class="tastes-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+              <img
+                srcset="./images/taste-4.png 1x, ./images/taste-4@2x.png 2x"
+                src="./images/taste-4.png"
+                alt="Chocolate drops"
+              />
               <p class="tastes-text black">SEMI - SWEET CHOCOLATE</p>
             </li>
 
             <li class="tastes-item orange">
-              <img src="./images/taste-5.png" alt="Cacao beans" />
+              <svg class="tastes-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+              <img
+                srcset="./images/taste-5.png 1x, ./images/taste-5@2x.png 2x"
+                src="./images/taste-5.png"
+                alt="Cacao beans"
+              />
               <p class="tastes-text">CACAO</p>
             </li>
 
             <li class="tastes-item white">
-              <img src="./images/taste-6.png" alt="Raspberries" />
+              <svg class="tastes-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+              <img
+                srcset="./images/taste-6.png 1x, ./images/taste-6@2x.png 2x"
+                src="./images/taste-6.png"
+                alt="Raspberries"
+              />
               <p class="tastes-text black">RASPBERRY</p>
             </li>
 
             <li class="tastes-item dark">
-              <img src="./images/taste-7.png" alt="Coconuts" />
+              <svg class="tastes-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+              <img
+                srcset="./images/taste-7.png 1x, ./images/taste-7@2x.png 2x"
+                src="./images/taste-7.png"
+                alt="Coconuts"
+              />
               <p class="tastes-text">COCONUT OIL</p>
+            </li>
+
+            <li class="tastes-item white">
+              <svg class="tastes-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+              <img
+                srcset="./images/taste-8.png 1x, ./images/taste-8@2x.png 2x"
+                src="./images/taste-8.png"
+                alt="Coconuts"
+              />
+              <p class="tastes-text black">VANILLA</p>
             </li>
           </ul>
         </div>
