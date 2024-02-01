@@ -27,7 +27,7 @@
         <a class="logo" href="./index.html"
           >SIMPLY <span class="logo-chocolate">CHOCOLATE</span>
           <svg width="24" height="24">
-            <use href="./images/symbol-defs.svg#icon-logo"></use>
+            <use href="./images/icons.svg#icon-logo"></use>
           </svg>
         </a>
 
@@ -655,5 +655,78 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal-form -->
+
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+
+        <p class="modal-title">
+          LEAVE A REVIEW ABOUT
+          <span class="modal-title-span">OUR CHOCOLATE</span>
+        </p>
+        <form>
+          <div>
+            <label for="">Name</label>
+            <div>
+              <input type="text" id="" />
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div>
+            <label for="">Email</label>
+            <div>
+              <input type="email" id="" />
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div>
+            <label for="">Phone number</label>
+            <div>
+              <input type="tel" id="" />
+              <svg class="modal-input-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div>
+            <label for=""></label>
+            <textarea></textarea>
+          </div>
+
+          <div class="modal-terms">
+            <input
+              class="modal-checkbox visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+              required
+            />
+            <label class="modal-terms-label" for="user-privacy"
+              ><span class="modal-terms-checkbox">
+                <svg class="modal-terms-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-tick"></use></svg></span
+              >I accept the terms and conditions of the
+              <a class="modal-terms-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+
+          <button class="modal-send-btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

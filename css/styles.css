@@ -129,10 +129,12 @@ button {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-icon-item {
     fill: #111;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-icon-link:hover,
@@ -194,6 +196,7 @@ button {
     align-items: flex-start;
     border-radius: 100px;
     background: #FD9222;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn-buy:hover,
@@ -212,6 +215,7 @@ button {
     border-radius: 100px;
     border: 1px solid #FFF;
     background: transparent;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn-how:hover,
@@ -230,6 +234,7 @@ button {
     font-weight: 500;
     line-height: 18px;
     letter-spacing: -0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-scroll-link {
@@ -241,10 +246,12 @@ button {
     display: flex;
     align-items: center;
     padding: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-scroll-icon {
     fill: #FD9222;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-scroll:hover,
@@ -621,6 +628,7 @@ button {
     border: 1px solid #FD9222;
     background-color: transparent;
     margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .reviews-btn:hover,
@@ -746,6 +754,8 @@ button {
     font-weight: 600;
     line-height: 1.28;
 }
+
+/* Mofal-form */
 
 
 /* Media. Resolution */
